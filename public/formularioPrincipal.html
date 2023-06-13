@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario Principal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Formulario Principal</h1>
+
+  <form action="/opcion" method="post">
+    <input type="radio" id="nuevo-usuario" name="opcion" value="nuevo">
+    <label for="nuevo-usuario">Crear nuevo Doctor</label><br>
+
+    <input type="radio" id="listar-usuarios" name="opcion" value="listar">
+    <label for="listar-usuarios">Listar Doctores</label><br>
+    
+    <input type="radio" id="nuevo-paciente" name="opcion" value="nuevoPaciente">
+    <label for="nuevo-paciente">Crear nuevo Paciente</label><br>
+    
+    <input type="radio" id="listar-pacientes" name="opcion" value="listarPacientes">
+    <label for="listar-pacientes">Listar Pacientes</label><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="scriptPrincipal.js"></script>
+</body>
+</html>

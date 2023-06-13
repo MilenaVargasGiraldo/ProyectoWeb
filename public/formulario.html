@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Formulario de Registro para Doctores</h1>
+  <form id="myForm" action="/guardar" method="post">
+    <label for="cedula">Número de cédula:</label>
+    <input type="text" id="cedula" name="cedula" required><br>
+  
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required><br>
+    
+    <label for="consultorio">Consultorio:</label>
+    <input type="text" id="consultorio" name="consultorio" required><br>
+    
+    <label for="correo">Correo de Contacto:</label>
+    <input type="text" id="correo" name="correo" required><br>
+    
+    <label for="especialidad">Especialidad:</label>
+    <select id="especialidad" name="especialidad">
+        <option value="medicina-general">Medicina general</option>
+        <option value="cardiologia">Cardiología</option>
+        <option value="medicina-interna">Medicina interna</option>
+        <option value="dermatologia">Dermatología</option>
+        <option value="rehabilitacion-fisica">Rehabilitación física</option>
+        <option value="psicologia">Psicología</option>
+        <option value="odontologia">Odontología</option>
+        <option value="radiologia">Radiología</option>
+    </select>
+
+
+    <button class="my-button" type="submit">Enviar</button>
+  </form>
+<script src="script.js"></script>
+
+</body>
+</html>
+
